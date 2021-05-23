@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/react-movie-library/static/css/main.2fd51f7a.chunk.css",
+    "main.js": "/react-movie-library/static/js/main.bd61cd71.chunk.js",
+    "main.js.map": "/react-movie-library/static/js/main.bd61cd71.chunk.js.map",
+    "runtime-main.js": "/react-movie-library/static/js/runtime-main.4001a299.js",
+    "runtime-main.js.map": "/react-movie-library/static/js/runtime-main.4001a299.js.map",
+    "static/js/2.13c6fb06.chunk.js": "/react-movie-library/static/js/2.13c6fb06.chunk.js",
+    "static/js/2.13c6fb06.chunk.js.map": "/react-movie-library/static/js/2.13c6fb06.chunk.js.map",
+    "static/js/3.22553092.chunk.js": "/react-movie-library/static/js/3.22553092.chunk.js",
+    "static/js/3.22553092.chunk.js.map": "/react-movie-library/static/js/3.22553092.chunk.js.map",
+    "index.html": "/react-movie-library/index.html",
+    "static/css/main.2fd51f7a.chunk.css.map": "/react-movie-library/static/css/main.2fd51f7a.chunk.css.map",
+    "static/js/2.13c6fb06.chunk.js.LICENSE.txt": "/react-movie-library/static/js/2.13c6fb06.chunk.js.LICENSE.txt",
+    "static/media/english.8f1bacdb.svg": "/react-movie-library/static/media/english.8f1bacdb.svg",
+    "static/media/filmweb.b5f4a0df.svg": "/react-movie-library/static/media/filmweb.b5f4a0df.svg",
+    "static/media/imdb.76c861bb.svg": "/react-movie-library/static/media/imdb.76c861bb.svg",
+    "static/media/polish.9954e265.svg": "/react-movie-library/static/media/polish.9954e265.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.4001a299.js",
+    "static/js/2.13c6fb06.chunk.js",
+    "static/css/main.2fd51f7a.chunk.css",
+    "static/js/main.bd61cd71.chunk.js"
+  ]
+}
