@@ -1,23 +1,39 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import React, { useState, useEffect } from "react";
+import Header from "./components/Header";
+import Movie from "./components/Movie";
+import Navbar from "./components/Navbar";
+
+const MOVIE_API_LIST =
+  "https://api.themoviedb.org/3/movie/popular?api_key=90f0d968a7369326970f2fbe5ed0f445";
 
 function App() {
+  const [page, setPage] = useState(1);
+  const [movies, setMovies] = useState([]);
+  const [language, setLanguage] = useState("en");
+
+  useEffect(() => {
+    fetch(MOVIE_API_LIST + `&language=${language}&page=${page}`)
+      .then((res) => res.json())
+      .then((data) => {
+        setMovies(data.results);
+      });
+  }, [language, page]);
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header setMovies={setMovies} />
+      <div className="movieContainer">
+        {movies.map((movie) => (
+          <Movie key={movie.id} {...movie} />
+        ))}
+      </div>
+      <Navbar
+        language={language}
+        setLanguage={setLanguage}
+        page={page}
+        setPage={setPage}
+      />
     </div>
   );
 }
